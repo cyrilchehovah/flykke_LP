@@ -1,0 +1,262 @@
+
+
+body {
+    font-family: "Open-sans", "sans-serif";
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333333;
+    background-color: white;
+    display: block;
+}
+
+h1 {
+  color: #FFF100;
+  font-family: "arista 2.0", "sans-serif";
+}
+
+h2 {
+  color: white;
+  font-family: "varela round", "sans-serif";
+}
+
+.navbar-link a {
+  font-family: "arista 2.0", "sans-serif";
+  color: #FFF100;
+  font-size: 25px;
+}
+
+.pages-home .chevron {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    bottom: 20px;
+}
+
+.white-link {
+    color: white;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+
+.navbar-fixed {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar {
+    background: white;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    padding: 0px 30px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #3A3841;
+     background: transparent;
+}
+
+.flex.v-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.navbar-logo {
+  background-image: url(images/logo.png);
+}
+
+.pusher {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.pages-home .background.window {
+    background-image:url(images/LP-BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pages-home .background {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.subscribe-form {
+  margin-top: 30px;
+}
+
+
+.pages-home .content {
+    z-index: 1;
+    text-align: center;
+}
+
+.pages-home .btns.email {
+    padding: 10px 40px;
+}
+
+.btns.round-left {
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+.btns.no-border {
+    border: 0px solid white;
+}
+
+.btns.white {
+    background-color: white;
+    color: #61C8F2;
+    padding: 10px 20px;
+    width: 290px;
+    font-family: "open-sans", "sans-serif";
+}
+
+.btns {
+    cursor: pointer;
+}
+
+.pages-home .btns.round-right {
+    margin-left: -5px;
+}
+
+.btns.round-right {
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.btns.no-border {
+    border: 0px solid white;
+}
+
+.btns.dark-blue {
+    background-color: #61C8F2;
+    font-family: "varela round", "sans-serif";
+    color: white;
+    padding: 10px 20px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.pages-home .background.infos {
+    background-image:url(images/LP-BG-infos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pages-home .background.infos h2 {
+  font-family: "arista 2.0", "sans-serif";
+  color: #61C8F2;
+  font-size: 35px;
+}
+
+.pages-home .background.infos p {
+  font-family: "varela round", "sans-serif";
+  color: #61C8F2;
+}
+
+.pages-home .background.infos h3 {
+  font-family: "varela round", "sans-serif";
+  color: #61C8F2;
+  font-weight: bolder;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.flex.h-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.main-footer {
+  margin-bottom: 100px;
+}
+
+.main-footer p {
+  font-family: "varela round", "sans-serif";
+  color: #61C8F2;
+}
+
+.margin-v-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-footer .icon {
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #3A3841;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.main-footer a {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+
