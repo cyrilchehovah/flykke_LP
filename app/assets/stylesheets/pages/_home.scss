@@ -8,8 +8,9 @@ body {
 }
 
 h1 {
-  color: #FFF100;
+  color: $yellow;
   font-family: "arista 2.0", "sans-serif";
+  font-size: 42px;
 }
 
 h2 {
@@ -30,76 +31,12 @@ h2 {
     color: white;
     cursor: pointer;
     &:hover {
-      color: #00719F;
+      color: $dark-blue;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease;
     }
-}
-
-/*----------------------------------------------------------------------------*/
-/* NAVBAR */
-
-.navbar-fixed {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 2;
-    width: 100%;
-}
-
-.navbar {
-  background: white;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 70px;
-  padding: 0px 30px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #3A3841;
-  background: transparent;
-  a:hover {
-    text-decoration: none;
-  }
-}
-
-.navbar-link a {
-  font-family: "arista 2.0", "sans-serif";
-  color: #FFF100;
-  font-size: 30px;
-}
-
-.flex.v-center {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-}
-
-.navbar-logo {
-  background-image: url(logo.png);
-}
-
-.pusher {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-}
-
-.flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -156,7 +93,7 @@ h2 {
 
 .white {
     background-color: white;
-    color: #61C8F2;
+    color: $dark-blue;
     padding: 10px 20px;
     width: 440px;
     height: 55px;
@@ -167,6 +104,7 @@ h2 {
 ::-webkit-input-placeholder {
    font-family: "varela round", "sans-serif";
    font-size: 20px;
+   color: $blue;
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -199,7 +137,7 @@ h2 {
 }
 
 .dark-blue {
-    background-color: #61C8F2;
+    background-color: $blue;
     font-family: "varela round", "sans-serif";
     font-size: 21px;
     color: white;
@@ -207,7 +145,7 @@ h2 {
     height: 55px;
     padding: 10px 20px;
     &:hover {
-      background-color: #00719F;
+      background-color: $dark-blue;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
@@ -219,10 +157,10 @@ h2 {
 
 .background.infos {
   background: white; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#CFEDFC, white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#CFEDFC, white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#CFEDFC, white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#CFEDFC, white); /* Standard syntax */
+  background: -webkit-linear-gradient($white-blue, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($white-blue, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($white-blue, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($white-blue, white); /* Standard syntax */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -230,96 +168,58 @@ h2 {
 
 .background.infos h2 {
   font-family: "arista 2.0", "sans-serif";
-  color: #61C8F2;
+  color: $blue;
   font-size: 35px;
   margin: 50px;
 }
 
 .background.infos p {
   font-family: "varela round", "sans-serif";
-  color: #61C8F2;
+  color: $blue;
 }
 
 .background.infos h3 {
   font-family: "varela round", "sans-serif";
-  color: #61C8F2;
+  color: $dark-blue;
   font-weight: bolder;
+  font-size: 18px;
+  margin-top: -20px;
 }
 
 .frame {
   margin-top: 350px;
 }
 
-/*----------------------------------------------------------------------------*/
-
-.flex.h-center {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+.container {
+  width: 1400px;
 }
 
-.main-footer {
-  margin-bottom: 50px;
+.dontchange {
+  background-image: url("dontchange.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
 }
 
-.main-footer p {
-  font-family: "varela round", "sans-serif";
-  color: #61C8F2;
-  font-size: 28px;
+.weloveads {
+  background-image: url("weloveads.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
 }
 
-.margin-v-30 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.vote {
+  background-image: url("vote.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
 }
-
-.main-footer .icon {
-    background-image:url("SM-cloud.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: white;
-    width: 120px;
-    height: 100px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    &:hover {
-      background-image:url("SM-cloud-hover.png");
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-      text-decoration: none;
-    }
-}
-
-.main-footer a {
-    background-image:url("SM-cloud.png");
-    margin-left: 20px;
-    margin-right: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    &:hover {
-    text-decoration: none;
-  }
-}
-
-

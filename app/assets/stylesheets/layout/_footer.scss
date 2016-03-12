@@ -1,1 +1,73 @@
-// Your footer style
+.flex.h-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.main-footer {
+  margin-bottom: 50px;
+}
+
+.main-footer p {
+  font-family: "varela round", "sans-serif";
+  color: $blue;
+  font-size: 28px;
+}
+
+.margin-v-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &-infos {
+      width: 430px;
+    }
+}
+
+.main-footer .icon {
+    background-image:url("SM-cloud.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    width: 120px;
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    &:hover {
+      background-image:url("SM-cloud-hover.png");
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      text-decoration: none;
+    }
+}
+
+.main-footer a {
+    background-image:url("SM-cloud.png");
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+    text-decoration: none;
+  }
+}
+
