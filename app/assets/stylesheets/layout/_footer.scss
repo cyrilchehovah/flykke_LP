@@ -10,21 +10,19 @@
     justify-content: center;
 }
 
-.main-footer {
-  margin-bottom: 50px;
-}
+
 
 .main-footer p {
   font-family: "varela round", "sans-serif";
   color: $blue;
-  font-size: 28px;
+  font-size: 18px;
 }
 
 .margin-v-30 {
     margin-top: 30px;
     margin-bottom: 30px;
     &-infos {
-      width: 430px;
+      width: 370px;
     }
 }
 
@@ -34,8 +32,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     color: white;
-    width: 120px;
-    height: 100px;
+    width: 90px;
+    height: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

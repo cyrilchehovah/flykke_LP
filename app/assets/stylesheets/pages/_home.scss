@@ -10,12 +10,13 @@ body {
 h1 {
   color: $yellow;
   font-family: "arista 2.0", "sans-serif";
-  font-size: 42px;
+  font-size: 32px;
 }
 
 h2 {
   color: white;
   font-family: "varela round", "sans-serif";
+  font-size: 20px;
 }
 
 .chevron {
@@ -136,10 +137,10 @@ h2 {
     border: 0px solid white;
 }
 
-.dark-blue {
+.btn-subscribe {
     background-color: $blue;
     font-family: "varela round", "sans-serif";
-    font-size: 21px;
+    font-size: 20px;
     color: white;
     width: 160px;
     height: 55px;
@@ -176,23 +177,21 @@ h2 {
 .background.infos p {
   font-family: "varela round", "sans-serif";
   color: $blue;
+  font-size: 12px;
 }
 
 .background.infos h3 {
   font-family: "varela round", "sans-serif";
   color: $dark-blue;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 15px;
   margin-top: -20px;
 }
 
 .frame {
-  margin-top: 350px;
+  margin-top: 400px;
 }
 
-.container {
-  width: 1400px;
-}
 
 .dontchange {
   background-image: url("dontchange.png");
