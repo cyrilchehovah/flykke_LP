@@ -1,9 +1,7 @@
 
 <div class="navbar navtop navbar-fixed">
   <!-- Logo -->
-  <div class="navbar-logo">
-
-  </div>
+  <div class="navbar-logo"></div>
 
   <div class="pusher"></div>
 
@@ -29,8 +27,8 @@
     <div class="margin-top-50 ">
       <!-- Begin MailChimp Signup Form -->
       <form action="//flykke.us13.list-manage.com/subscribe/post?u=f2d4579515a389e72db45b09b&amp;id=d12778a49a" accept-charset="UTF-8" method="post" data-remote="true" name="mc-embedded-subscribe-form" class="subscribe-form" target="_blank" novalidate>
-            <input type="text" name="b_f2d4579515a389e72db45b09b_d12778a49a" tabindex="-1" value="" placeholder="Enter your email" class="white no-border round-left">
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-subscribe no-border round-right">
+            <input type="text" name="b_f2d4579515a389e72db45b09b_d12778a49a" tabindex="-1" value="" placeholder="Enter your email" class="subscribe-input no-border round-left">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-subscribe no-border round-right" data-toggle="modal" data-target="#confirmation-modal">
             <div id="mce-responses" class="clear">
               <div class="response" id="mce-error-response" style="display:none"></div>
               <div class="response" id="mce-success-response" style="display:none"></div>
@@ -44,6 +42,23 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Thank you!</h4>
+      </div>
+      <div class="modal-body">
+        <p>You have successfully subscribed to our newsletter, you will receive 3 emails a day from now one.<br><br>Just kidding.<br>Thank you for subscribing, We love you.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-confirm" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 <!-- section how it works -->

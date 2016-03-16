@@ -92,7 +92,7 @@ h2 {
     border: 0px solid white;
 }
 
-.white {
+.subscribe-input {
     background-color: white;
     color: $dark-blue;
     padding: 10px 20px;
@@ -100,6 +100,9 @@ h2 {
     height: 55px;
     font-family: "varela round", "sans-serif";
     font-size: 20px;
+    &:focus {
+    outline:none;
+    }
 }
 
 ::-webkit-input-placeholder {
@@ -151,6 +154,9 @@ h2 {
       -moz-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease;
+    }
+    &:focus {
+    outline:none;
     }
 }
 
