@@ -1,5 +1,4 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+//  Scroll down automatically
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -14,6 +13,7 @@ $(function() {
     }
   });
 
+//  Scroll up automatically
   $("div[class='navbar-logo']").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
@@ -21,8 +21,11 @@ $(function() {
 
   $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').focus()
-  })
+  });
 
+
+
+// Center the app vertically on the displayed page
   function reposition() {
       var modal = $(this),
           dialog = modal.find('.modal-dialog');
@@ -38,7 +41,37 @@ $(function() {
   $(window).on('resize', function() {
       $('.modal:visible').each(reposition);
   });
-
 });
+
+// Open modal when location = /#thankyou
+$(function(){
+    if(window.location.hash == "#thankyou") {
+        var hash = window.location.hash;
+        console.log("test");
+        $("#myModal").modal('show');
+    }
+});
+
+
+function ValidateEmail()
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    // alert("You have entered an invalid email address!")
+    return (false)
+}
+
+// $(function() {
+//   console.log($('#mce-EMAIL').value)
+//   var $email = $('#mce-EMAIL').value;
+//   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//   if ($email.val() == '' || !re.test($email.val()))
+//     {
+//       $('#lol').append("hello")
+//     };
+// });
+
 
 

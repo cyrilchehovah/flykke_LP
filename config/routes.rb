@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  get 'subscribers/subscribe_to_newsletter'
+
   get 'home', to: 'pages#home'
 
   root to: 'pages#home'
+
+  resource 'subscriber', only: :create
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
