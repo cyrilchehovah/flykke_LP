@@ -25,7 +25,7 @@ $(function() {
 
 
 
-// Center the app vertically on the displayed page
+// Center the modal vertically on the displayed page
   function reposition() {
       var modal = $(this),
           dialog = modal.find('.modal-dialog');
@@ -44,24 +44,24 @@ $(function() {
 });
 
 // Open modal when location = /#thankyou
-$(function(){
-    if(window.location.hash == "#thankyou") {
-        var hash = window.location.hash;
-        console.log("test");
-        $("#myModal").modal('show');
-    }
-});
+// $(function(){
+//     if(window.location.hash == "#thankyou") {
+//         var hash = window.location.hash;
+//         console.log("test");
+//         $("#myModal").modal('show');
+//     }
+// });
 
 
-function ValidateEmail()
-{
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-  {
-    return (true)
-  }
-    // alert("You have entered an invalid email address!")
-    return (false)
-}
+// function ValidateEmail()
+// {
+//  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+//   {
+//     return (true)
+//   }
+//     // alert("You have entered an invalid email address!")
+//     return (false)
+// }
 
 // $(function() {
 //   console.log($('#mce-EMAIL').value)
