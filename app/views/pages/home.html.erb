@@ -27,31 +27,23 @@
 
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup" class="margin-top-50 ">
-      <form action="//flykke.us13.list-manage.com/subscribe/post?u=f2d4579515a389e72db45b09b&amp;id=d12778a49a" accept-charset="UTF-8" method="post" data-remote="true" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" class="subscribe-form validate" target="_blank" novalidate>
+      <%= form_tag subscribers_path, :class => "subscribe-form validate", :id => "mc-embedded-subscribe-form", remote: true do %>
         <div id="mc_embed_signup_scroll">
-
           <div class="mc-field-group">
-            <input type="email" name="EMAIL" tabindex="-1" value="" placeholder="Enter your email" class="required email subscribe-input no-border round-left" id="mce-EMAIL">
+            <input type="email" name="email" tabindex="-1" value="" placeholder="Enter your email" class="required email subscribe-input no-border round-left" id="mce-EMAIL">
             <input type="submit" value="Be part of it!" name="subscribe" id="mc-embedded-subscribe" class="btn-subscribe no-border round-right button">
           </div>
-
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
           <div style="position: absolute; left: -5000px;" aria-hidden="true">
             <input type="text" name="b_f2d4579515a389e72db45b09b_d12778a49a" tabindex="-1" value="">
           </div>
         </div>
-      </form>
-
+      <% end %>
     </div>
-    <!--End mc_embed_signup-->
   </div>
 </div>
 
-
-<!-- <div class="col-xs-12 col-md-6 col-md-offset-3">
+<!-- Modal in case of successful subscribe -->
+<div class="col-xs-12 col-md-6 col-md-offset-3">
   <div id="thankyou">
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
        <div class="modal-dialog" role="document">
@@ -70,24 +62,7 @@
         </div>
       </div>
   </div>
-</div> -->
-
-<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Thank you!</h4>
-      </div>
-      <div class="modal-body">
-        <p>You have successfully subscribed to our newsletter, you will receive 3 emails a day from now on.<br><br>Just kidding!<br>Thank you for your interest in our project, we love you.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-confirm" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> -->
+</div>
 
 
 <!-- section how it works -->

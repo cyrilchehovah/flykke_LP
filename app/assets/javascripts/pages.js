@@ -24,7 +24,6 @@ $(function() {
   });
 
 
-
 // Center the modal vertically on the displayed page
   function reposition() {
       var modal = $(this),
@@ -51,27 +50,5 @@ $(function() {
 //         $("#myModal").modal('show');
 //     }
 // });
-
-
-// function ValidateEmail()
-// {
-//  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-//   {
-//     return (true)
-//   }
-//     // alert("You have entered an invalid email address!")
-//     return (false)
-// }
-
-// $(function() {
-//   console.log($('#mce-EMAIL').value)
-//   var $email = $('#mce-EMAIL').value;
-//   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//   if ($email.val() == '' || !re.test($email.val()))
-//     {
-//       $('#lol').append("hello")
-//     };
-// });
-
 
 
