@@ -81,4 +81,7 @@ Rails.application.configure do
   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
   config.assets.compile = true
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "flykke_lp.herokuapp.com" }
+
 end
