@@ -7,6 +7,9 @@ class SubscribersController < ApplicationController
           format.js
     end
   rescue Gibbon::MailChimpError
-    redirect_to root_path
+    respond_to do |format|
+          format.html{ redirect_to root_path }
+          format.js
+    end
   end
 end

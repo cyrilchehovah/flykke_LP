@@ -17,5 +17,6 @@ class SubscribeToNewsletterService
         # }
       }
     )
+    SubscriberMailer.welcome(@email).deliver_now
   end
 end
