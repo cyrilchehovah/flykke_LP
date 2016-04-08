@@ -82,6 +82,6 @@ Rails.application.configure do
   config.assets.compile = true
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "flykkelp.herokuapp.com" }
+  config.action_mailer.default_url_options = { host: ENV['HOST'] }
 
 end
