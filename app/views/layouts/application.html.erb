@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Flykke</title>
+    <title><%= content_for?(:title) ? yield(:title) : "Flykke" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Flykke is a social platform to discover and help support content creators and charities concretely & freely thanks to a smart system of advertisement display" %>">
+    <%= csrf_meta_tags %>
     <%= favicon_link_tag 'favicon-64-2.png' %>
         <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="logo-hand.png" /><![endif]-->
     <meta charset="utf-8">
@@ -20,7 +22,6 @@
     <link href='/assets/webfontkit-arista2.0/font-stylesheet.scss' rel='stylesheet' type='text/css' charset='utf-8'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Varela+Round' rel='stylesheet' type='text/css'>
 
-    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
   <body>
