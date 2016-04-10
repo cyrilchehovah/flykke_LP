@@ -9,8 +9,9 @@ body {
 
 h1 {
   color: $yellow;
-  font-family: "arista 2.0", "sans-serif";
+  font-family: "arista 2.0", "varela round";
   font-size: 32px;
+  // font-weight: bolder;
 }
 
 h2 {
@@ -294,7 +295,7 @@ h2 {
   }
 
   .subscribe-input {
-     width: 206px;
+     width: 170px;
      font-size: 12px;
    }
 
