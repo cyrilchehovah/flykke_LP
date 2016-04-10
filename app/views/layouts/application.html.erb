@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for?(:title) ? yield(:title) : "Flykke" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Flykke is a social platform to discover and help support content creators and charities concretely & freely thanks to a smart system of advertisement display" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "Welcome on Flykke" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Flykke is a social platform to discover and concretely support content creators and charities freely thanks to a smart system of advertisement display." %>">
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'favicon-64-2.png' %>
         <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="logo-hand.png" /><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate" />
+
+    <meta property="og:url"                content="http://www.flykke.com" />
+    <meta property="og:type"               content="" />
+    <meta property="og:title"              content="Add Meaning To The Likes You Give" />
+    <meta property="og:description"        content="Discover a fairer way of liking and concretely help freely your favorite content creators & charities." />
+    <meta property="og:image"              content="http://www.flykke.com/images/App-logo-Flykke-1200x627.png" />
 <!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"> -->
