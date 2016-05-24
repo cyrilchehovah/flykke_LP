@@ -4,7 +4,7 @@ development:
   DEV_EMAIL:            'hello@flykke.com'
 
 production:
-  MAILCHIMP_API_KEY:    'c284fbe65042041a051c748a15b10073-us13'
+  MAILCHIMP_API_KEY:    'abbcd3fdd3b92521aa89c7757f5d7aae-us13'
   MAILCHIMP_LIST_ID:    'd12778a49a'
 
   POSTMARK_API_TOKEN:   '54720f7c-7ab0-45f8-8e8c-4fdd0cbd53e0'
